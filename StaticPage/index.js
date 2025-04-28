@@ -1,13 +1,17 @@
-function MainContent(){
+import Header from "./Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
+
+function ExampleWebsiteMain(){
     return(
-        <nav className="main-content paragraph">
-            <p>something? idk lol</p>
-        </nav>
+        <div className="main-container">
+            <Header/>
+            <MainContent/>
+            <Footer />
+        </div>
     )
 }
 
-ReactDOM.render(<ul>
-    <li>Hello</li>
-    <li>World</li>
-</ul>
-, document.getElementById("root"))
+ReactDOM.render(<ExampleWebsiteMain />, document.getElementById('root'))
+
+
