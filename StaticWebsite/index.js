@@ -1,5 +1,3 @@
-import Main from "./Components/Main.js"
-import NavBar from "./Components/NavBar.js"
 
 function App(){
     return(

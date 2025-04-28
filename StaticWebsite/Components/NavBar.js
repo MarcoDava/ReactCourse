@@ -1,15 +1,15 @@
 function NavBar() {
     return (
         <div className="navbar">
-            <h1>My React App</h1>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+                <div className="title-container">
+                    <img src="./images/react-logo.png" alt="React Logo" className="logo"/>
+                    <h1>ReactFacts</h1>
+                </div>
+                <div className="nav-item">
+                    <h2>React Course - Project 1</h2>
+                </div>
             </nav>
         </div>
     );
 }
-export default NavBar;
