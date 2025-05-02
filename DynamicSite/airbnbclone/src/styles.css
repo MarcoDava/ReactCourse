@@ -1,0 +1,144 @@
+*{
+  gap:0px;
+  padding:0px;
+  margin:0px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  length:100%;
+  background-image: url("https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.main-container{
+  width:550px;
+  min-height: 853px;
+  background-color: aliceblue;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+nav{
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 0px;
+}
+
+.navbar-logo > img{
+  margin:0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:40px;
+}
+
+.online-experiences{
+  margin:40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+}
+
+.online-experiences > h1{
+  width:80%;
+  text-align: left;
+  font-size: 30px;
+  color: #313131;
+  margin:0px 0px 20px 0px;
+}
+
+.online-experiences > p{
+  width:80%;
+  text-align: left;
+  line-height: 25px;
+  font-size: 20px;
+  color: #313131;
+  margin:0px 0px 20px 0px;
+}
+
+.online-experiences > img{
+  height: 232px;
+  width:395px;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:  177px;
+  height: 400px;
+}
+
+.card-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 177px;
+  height: 58px;
+}
+
+.card-description > p{
+  font-size:14px;
+  text-align: left;
+  width: 177px;
+  height:14px;
+}
+
+.gray{
+  color: #B0B0B0;
+}
+
+.bolding{
+  font-weight: bold;
+  color: #313131;
+}
+
+.rating{
+  height:14px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating > img{
+  height: 14px;
+  width: 14px;
+}
+
+.card-image{
+  height:235px;
+}
+
+
+
+
