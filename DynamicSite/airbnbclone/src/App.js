@@ -1,37 +1,26 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Card from "./Components/Card";
+import CardData from "./CardData";
+
 
 export default function App(){
+    const cardElements = CardData.map(card => {
+        return <Card
+            image={card.image}
+            rating={card.rating}
+            reviewCount={card.reviewCount}
+            country={card.country}
+            description={card.description}
+            cost={card.cost}
+            openSpots={card.openSpots}
+        />
+    })
     return(
         <div className="main-container">    
             <Navbar/>
             <div className="card-containers">
-                <Card
-                    image="images/card_image1.png"
-                    rating="5.0"
-                    reviewCount="6"
-                    country="USA"
-                    description="Life lessons with Katie Zaferes"
-                    cost="136"
-                />
-                <Card
-                    image="images/card_image2.png"
-                    rating="5.0"
-                    reviewCount="30"
-                    country="USA"
-                    description="Learn wedding photography"
-                    cost="125"
-                />
-                <Card
-                    image="images/card_image3.png"
-                    rating="4.8"
-                    reviewCount="2"
-                    country="USA"
-                    description="Group Mountain Biking"
-                    cost="50"
-                />
-
+                {cardElements}
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import React from 'react';
 export default function Card(props) {
     return(
         <div className="card-container">
+            <div className="card-badge">SOLD OUT</div>
             <img src={props.image} alt="card image" className="card-image"/>
             <div className="card-description">
                 <div className="rating">
