@@ -1,10 +1,14 @@
+import React from "react"
 import memesData from "../MemesData"
 
 export default function Form(){
+    const [url,setUrl] = React.useState("")
     function getMeme(){
         const memesArray = memesData.data.memes
-        const randomNumber = Math.floor(Math.random() * 10)+1
-        const url= memesArray[randomNumber].image
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        console.log(randomNumber)
+        setUrl(memesArray[randomNumber].url)
+        console.log(url)
     }
     return(
         
@@ -16,6 +20,7 @@ export default function Form(){
                 </div>
                 <button className="submit-button" onClick={getMeme}>Get a new meme image</button>
             </div>
+            <img src={url} className="meme-image"/>
         </div>
     )
 }

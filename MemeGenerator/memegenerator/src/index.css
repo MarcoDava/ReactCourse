@@ -39,6 +39,8 @@ nav > div > img{
   display:flex;
   justify-content:center;
   align-items:center;
+  flex-direction:column;
+  gap:7rem;
   margin:3rem 0rem;
   width:100%;
 }
@@ -76,5 +78,9 @@ nav > div > img{
   color:white;
   border-radius: 5px;
   border-color: transparent;
+}
+
+.meme-image{
+  width: 30rem;
 }
 
