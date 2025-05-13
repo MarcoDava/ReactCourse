@@ -2,13 +2,21 @@ import React from "react"
 import memesData from "../MemesData"
 
 export default function Form(){
-    const [url,setUrl] = React.useState("")
+    const [meme,setMeme] = React.useState({
+        topText:"",
+        bottomText:"",
+        randomImage:"https://cdn-useast1.kapwing.com/static/templates/shut-up-and-take-my-money-fry-meme-template-full-182f79b6.webp"
+    })
+    const [allMemeImages,setAllMemeImages]=React.useState(memesData) 
+
     function getMeme(){
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        console.log(randomNumber)
-        setUrl(memesArray[randomNumber].url)
-        console.log(url)
+        const url = memesArray[randomNumber].url
+        setMeme(prevMeme =>({
+            ...prevMeme,
+            randomImage:url
+        }))
     }
     return(
         
@@ -20,7 +28,7 @@ export default function Form(){
                 </div>
                 <button className="submit-button" onClick={getMeme}>Get a new meme image</button>
             </div>
-            <img src={url} className="meme-image"/>
+            <img src={meme.randomImage} className="meme-image"/>
         </div>
     )
 }
