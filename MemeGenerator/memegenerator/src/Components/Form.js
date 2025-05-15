@@ -18,13 +18,13 @@ export default function Form(){
             randomImage:url
         }))
     }
+
     return(
-        
         <div className="form-container">
             <div className="user-input">
                 <div className="textboxes">
-                    <input type="text" placeholder="Top text"></input>
-                    <input type="text" placeholder="Bottom text"></input>
+                    <input type="text" placeholder="Top text"/>
+                    <input type="text" placeholder="Bottom text"/>
                 </div>
                 <button className="submit-button" onClick={getMeme}>Get a new meme image</button>
             </div>
